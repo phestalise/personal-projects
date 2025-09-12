@@ -15,7 +15,7 @@ Este é o portfólio pessoal de **Paulo Estalise**, desenvolvido com HTML, CSS e
 ---
 
 ## 📂 Estrutura do Projeto
-
+'''
 │
 ├── index.html # Página principal
 ├── style.css # Arquivo de estilos
@@ -23,6 +23,6 @@ Este é o portfólio pessoal de **Paulo Estalise**, desenvolvido com HTML, CSS e
 ├── /img # Imagens do projeto
 │ └── foto-paulo.jpg # Foto de perfil
 └── README.md # Este arquivo
-
+'''
 ## Clone este repositório:
 git clone https://github.com/phestalise/personal-projects.git
