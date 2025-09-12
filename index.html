@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Estalise - Portfólio</title>
+    <title>Paulo Estalise - Desenvolvedor & Criativo</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- CSS do projeto -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background animado -->
+    <div class="animated-background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
     <!-- Header com Navegação -->
     <header>
         <div class="container">
             <nav>
-                <div class="logo">PE</div>
+                <div class="logo" data-text="PE">PE</div>
                 <ul class="nav-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sobre" class="nav-link"><span>01.</span> Sobre</a></li>
+                    <li><a href="#projetos" class="nav-link"><span>02.</span> Projetos</a></li>
+                    <li><a href="#contato" class="nav-link"><span>03.</span> Contato</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -28,38 +43,77 @@
     <section id="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Paulo Estalise</h1>
-                <p>Olá! Meu nome é Paulo Estalise e sou apaixonado por tecnologia e desenvolvimento. Tenho experiência em criar interfaces web com HTML e CSS, e estou constantemente expandindo meus conhecimentos em programação.</p>
-                <a href="#projetos" class="btn">Ver Projetos</a>
+                <p class="greeting">Olá, meu nome é</p>
+                <h1 class="hero-name">Paulo Estalise</h1>
+              
+                <p class="hero-description">Sou um desenvolvedor apaixonado por tecnologia, especializado em criar experiências digitais excepcionais. Atualmente, foco em desenvolver soluções inovadoras que unem funcionalidade e design.</p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="./img/foto-paulo.jpg" alt="Foto de Paulo Estalise" class="profile-img" id="profile-picture">
+                <div class="image-container">
+                    <img src="./img/foto-paulo.jpg" alt="Foto de Paulo Estalise" class="profile-img" id="profile-picture">
+                    <div class="image-overlay"></div>
+                    <div class="image-border"></div>
+                </div>
                 <input type="file" id="upload-photo" accept="image/*" style="display: none;">
             </div>
         </div>
+      
     </section>
 
     <!-- Sobre Mim -->
     <section id="sobre">
         <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
+            <h2 class="section-title"><span></span> Sobre Mim</h2>
             <div class="sobre-content">
                 <div class="sobre-texto">
                     <p>Tenho me dedicado também ao desenvolvimento de chatbots e soluções inteligentes, proporcionando experiências mais interativas e funcionais aos usuários. Busco sempre unir técnica e criatividade nos projetos que desenvolvo, mantendo o foco na construção de interfaces intuitivas, responsivas e acessíveis.</p>
                     <p>Além da tecnologia, tenho uma grande paixão pela música nas horas vagas; gosto de tocar violino, o que me ajuda a equilibrar lógica e sensibilidade.</p>
                     <p>Acredito que o aprendizado é um processo contínuo e estou sempre em busca de novos desafios e conhecimentos para evoluir como profissional e como pessoa.</p>
-                </div>
-                <div class="habilidades">
-                    <br>
-                    <h2>Tecnologias:</h2>
-                    <ul>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>React</li>
-                        <li>SQL</li>
-                    </ul>
+                    <div class="tecnologias">
+                        <h3>Tecnologias que utilizo:</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fa-brands fa-python"></i>
+                                </div>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fa-brands fa-java"></i>
+                                </div>
+                                <span>Java</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fa-brands fa-react"></i>
+                                </div>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,11 +122,19 @@
     <!-- Projetos -->
     <section id="projetos">
         <div class="container">
-            <h2 class="section-title">Meus Projetos</h2>
+            <h2 class="section-title"><span></span> Meus Projetos</h2>
             <div class="projetos-grid">
                 <!-- Projeto 1 -->
                 <div class="projeto-card">
-                    <img src="https://placehold.co/600x400/233554/64ffda?text=Projeto+Web" alt="Projeto 1" class="projeto-img">
+                    <div class="projeto-img-container">
+                        <img src="https://placehold.co/600x400/233554/64ffda?text=Projeto+Web" alt="Projeto 1" class="projeto-img">
+                        <div class="projeto-overlay">
+                            <div class="projeto-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="projeto-info">
                         <h3>Sistema de Gestão</h3>
                         <p>Sistema web completo para gestão de tarefas e projetos com interface responsiva.</p>
@@ -81,12 +143,19 @@
                             <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                         </div>
-                        <a href="#" class="btn">Ver Detalhes</a>
                     </div>
                 </div>
                 <!-- Projeto 2 -->
                 <div class="projeto-card">
-                    <img src="https://placehold.co/600x400/233554/64ffda?text=App+Python" alt="Projeto 2" class="projeto-img">
+                    <div class="projeto-img-container">
+                        <img src="https://placehold.co/600x400/233554/64ffda?text=App+Python" alt="Projeto 2" class="projeto-img">
+                        <div class="projeto-overlay">
+                            <div class="projeto-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="projeto-info">
                         <h3>Análise de Dados</h3>
                         <p>Aplicação em Python para análise e visualização de dados de mercado.</p>
@@ -95,12 +164,19 @@
                             <span class="tag">Pandas</span>
                             <span class="tag">Matplotlib</span>
                         </div>
-                        <a href="#" class="btn">Ver Detalhes</a>
                     </div>
                 </div>
                 <!-- Projeto 3 -->
                 <div class="projeto-card">
-                    <img src="https://placehold.co/600x400/233554/64ffda?text=App+React" alt="Projeto 3" class="projeto-img">
+                    <div class="projeto-img-container">
+                        <img src="https://placehold.co/600x400/233554/64ffda?text=App+React" alt="Projeto 3" class="projeto-img">
+                        <div class="projeto-overlay">
+                            <div class="projeto-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="projeto-info">
                         <h3>E-commerce React</h3>
                         <p>Loja virtual desenvolvida com React e integração com API de pagamentos.</p>
@@ -109,9 +185,11 @@
                             <span class="tag">JavaScript</span>
                             <span class="tag">CSS</span>
                         </div>
-                        <a href="#" class="btn">Ver Detalhes</a>
                     </div>
                 </div>
+            </div>
+            <div class="ver-mais">
+                <a href="#" class="btn btn-outline">Ver mais projetos</a>
             </div>
         </div>
     </section>
@@ -119,9 +197,10 @@
     <!-- Contato -->
     <section id="contato">
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
+            <h2 class="section-title"><span>03.</span> Entre em Contato</h2>
             <div class="contato-content">
                 <div class="contato-info">
+                    <p>Estou sempre aberto a discutir novos projetos, oportunidades criativas ou parcerias. Entre em contato!</p>
                     <div class="contato-item">
                         <div class="contato-icon"><i class="fas fa-envelope"></i></div>
                         <div>
@@ -143,6 +222,10 @@
                             <p>São Paulo, Brasil</p>
                         </div>
                     </div>
+                    <div class="social-links">
+                        <a href="https://github.com/phestalise" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/paulo-henrique-estalise-a2324a271/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="contato-form">
                     <form id="form-contato">
@@ -158,24 +241,25 @@
                             <label for="mensagem">Mensagem</label>
                             <textarea id="mensagem" class="form-control" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Enviar Mensagem</button>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
- 
-
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/phestalise"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/paulo-henrique-estalise-a2324a271/"><i class="fab fa-linkedin-in"></i></a>
-            
+            <div class="footer-content">
+                <div class="logo-footer">PE</div>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> por Paulo Estalise</p>
+                <div class="social-links">
+                    <a href="https://github.com/phestalise"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/paulo-henrique-estalise-a2324a271/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <p>&copy; 2025 Paulo Estalise. Todos os direitos reservados.</p>
+            <p class="copyright">&copy; 2025 Paulo Estalise. Todos os direitos reservados.</p>
         </div>
     </footer>
 
