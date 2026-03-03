@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Estalise - Desenvolvedor & Criativo</title>
-    <!-- Font Awesome -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- CSS do projeto -->
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Background animado -->
+
+    <!-- Background -->
     <div class="animated-background">
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>
@@ -20,7 +22,7 @@
         <div class="shape shape-4"></div>
     </div>
 
-    <!-- Header com Navegação -->
+    <!-- Header -->
     <header>
         <div class="container">
             <nav>
@@ -30,240 +32,167 @@
                     <li><a href="#projetos" class="nav-link"><span>02.</span> Projetos</a></li>
                     <li><a href="#contato" class="nav-link"><span>03.</span> Contato</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section id="hero">
         <div class="container hero-content">
             <div class="hero-text">
                 <p class="greeting">Olá, meu nome é</p>
                 <h1 class="hero-name">Paulo Estalise</h1>
-              
-                <p class="hero-description">Sou um desenvolvedor apaixonado por tecnologia, especializado em criar experiências digitais excepcionais. Atualmente, foco em desenvolver soluções inovadoras que unem funcionalidade e design.</p>
+                <p class="hero-description">
+                    Desenvolvedor apaixonado por tecnologia, focado na criação de soluções eficientes, modernas e escaláveis.
+                </p>
+
                 <div class="hero-buttons">
                     <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
                     <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
                 </div>
             </div>
+
             <div class="hero-image">
                 <div class="image-container">
-                    <img src="./img/foto-paulo.jpg" alt="Foto de Paulo Estalise" class="profile-img" id="profile-picture">
+                    <img src="./img/foto-paulo.jpg" class="profile-img">
                     <div class="image-overlay"></div>
                     <div class="image-border"></div>
                 </div>
-                <input type="file" id="upload-photo" accept="image/*" style="display: none;">
             </div>
         </div>
-      
     </section>
 
-    <!-- Sobre Mim -->
+    <!-- SOBRE -->
     <section id="sobre">
         <div class="container">
-            <h2 class="section-title"><span></span> Sobre Mim</h2>
-            <div class="sobre-content">
-                <div class="sobre-texto">
-                    <p>Tenho me dedicado também ao desenvolvimento de chatbots e soluções inteligentes, proporcionando experiências mais interativas e funcionais aos usuários. Busco sempre unir técnica e criatividade nos projetos que desenvolvo, mantendo o foco na construção de interfaces intuitivas, responsivas e acessíveis.</p>
-                    <p>Além da tecnologia, tenho uma grande paixão pela música nas horas vagas; gosto de tocar violino, o que me ajuda a equilibrar lógica e sensibilidade.</p>
-                    <p>Acredito que o aprendizado é um processo contínuo e estou sempre em busca de novos desafios e conhecimentos para evoluir como profissional e como pessoa.</p>
-                    <div class="tecnologias">
-                        <h3>Tecnologias que utilizo:</h3>
-                        <div class="tech-grid">
-                            <div class="tech-item">
-                                <div class="tech-icon">
-                                    <i class="fa-brands fa-html5"></i>
-                                </div>
-                                <span>HTML/CSS</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">
-                                    <i class="fa-brands fa-js"></i>
-                                </div>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">
-                                    <i class="fa-brands fa-python"></i>
-                                </div>
-                                <span>Python</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">
-                                    <i class="fa-brands fa-java"></i>
-                                </div>
-                                <span>Java</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">
-                                    <i class="fa-brands fa-react"></i>
-                                </div>
-                                <span>React</span>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">
-                                    <i class="fa-solid fa-database"></i>
-                                </div>
-                                <span>SQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="section-title">Sobre Mim</h2>
+            <p>
+                Desenvolvo aplicações web e sistemas completos utilizando Java, Python e JavaScript.
+                Busco sempre unir performance, organização e experiência do usuário.
+            </p>
         </div>
     </section>
 
-    <!-- Projetos -->
+    <!-- PROJETOS -->
     <section id="projetos">
         <div class="container">
-            <h2 class="section-title"><span></span> Meus Projetos</h2>
+            <h2 class="section-title">Meus Projetos</h2>
+
             <div class="projetos-grid">
-                <!-- Projeto 1 -->
+
+                <!-- PROJETO 1 -->
                 <div class="projeto-card">
                     <div class="projeto-img-container">
-                        <img src="https://placehold.co/600x400/233554/64ffda?text=Projeto+Web" alt="Projeto 1" class="projeto-img">
+                        <img src="https://placehold.co/600x400/233554/64ffda?text=MotivaGig" class="projeto-img">
                         <div class="projeto-overlay">
                             <div class="projeto-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://motivagig.vercel.app/" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
+
                     <div class="projeto-info">
-                        <h3>Sistema de Gestão</h3>
-                        <p>Sistema web completo para gestão de tarefas e projetos com interface responsiva.</p>
-                        <div class="projeto-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projeto 2 -->
-                <div class="projeto-card">
-                    <div class="projeto-img-container">
-                        <img src="https://placehold.co/600x400/233554/64ffda?text=App+Python" alt="Projeto 2" class="projeto-img">
-                        <div class="projeto-overlay">
-                            <div class="projeto-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Análise de Dados</h3>
-                        <p>Aplicação em Python para análise e visualização de dados de mercado.</p>
-                        <div class="projeto-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">Matplotlib</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projeto 3 -->
-                <div class="projeto-card">
-                    <div class="projeto-img-container">
-                        <img src="https://placehold.co/600x400/233554/64ffda?text=App+React" alt="Projeto 3" class="projeto-img">
-                        <div class="projeto-overlay">
-                            <div class="projeto-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>E-commerce React</h3>
-                        <p>Loja virtual desenvolvida com React e integração com API de pagamentos.</p>
+                        <h3>MotivaGig</h3>
+                        <p>Plataforma para evolução de autônomos com acompanhamento de desempenho.</p>
                         <div class="projeto-tags">
                             <span class="tag">React</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">CSS</span>
+                            <span class="tag">CSS Tawind</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="ver-mais">
-                <a href="#" class="btn btn-outline">Ver mais projetos</a>
+
+                <!-- PROJETO 2 -->
+                <div class="projeto-card">
+                    <div class="projeto-img-container">
+                        <img src="https://placehold.co/600x400/233554/64ffda?text=E-commerce" class="projeto-img">
+                        <div class="projeto-overlay">
+                            <div class="projeto-links">
+                                <a href="https://github.com/phestalise/ecommerce-fechaduras" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projeto-info">
+                        <h3>E-commerce Fechaduras</h3>
+                        <p>Loja virtual moderna com estrutura profissional e design responsivo.</p>
+                        <div class="projeto-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">CSS Tawind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJETO 3 -->
+                <div class="projeto-card">
+                    <div class="projeto-img-container">
+                        <img src="https://placehold.co/600x400/233554/64ffda?text=Sistema+Hospitalar" class="projeto-img">
+                        <div class="projeto-overlay">
+                            <div class="projeto-links">
+                                <a href="https://challenge-3-front.vercel.app/" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projeto-info">
+                        <h3>Projeto Hospitalar</h3>
+                        <p>Sistema web para ajuda dos pacientes</p>
+                        <div class="projeto-tags">
+                             <span class="tag">React</span>
+                            <span class="tag">CSS Tawind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJETO 4 -->
+                <div class="projeto-card">
+                    <div class="projeto-img-container">
+                        <img src="https://placehold.co/600x400/233554/64ffda?text=CRUD+Python" class="projeto-img">
+                        <div class="projeto-overlay">
+                            <div class="projeto-links">
+                                <a href="https://github.com/phestalise/crud_funcionarios" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projeto-info">
+                        <h3>CRUD Funcionários - Python</h3>
+                        <p>Sistema em Python para cadastro e gerenciamento de funcionários.</p>
+                        <div class="projeto-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">SQLite</span>
+                             <span class="tag">HTML</span>
+                            <span class="tag">CSS </span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Contato -->
+    <!-- CONTATO -->
     <section id="contato">
         <div class="container">
-            <h2 class="section-title"><span>03.</span> Entre em Contato</h2>
-            <div class="contato-content">
-                <div class="contato-info">
-                    <p>Estou sempre aberto a discutir novos projetos, oportunidades criativas ou parcerias. Entre em contato!</p>
-                    <div class="contato-item">
-                        <div class="contato-icon"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>phestalise@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contato-item">
-                        <div class="contato-icon"><i class="fas fa-phone"></i></div>
-                        <div>
-                            <h3>Telefone</h3>
-                            <p>+55 (11) 995778390</p>
-                        </div>
-                    </div>
-                    <div class="contato-item">
-                        <div class="contato-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h3>Localização</h3>
-                            <p>São Paulo, Brasil</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/phestalise" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/paulo-henrique-estalise-a2324a271/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="contato-form">
-                    <form id="form-contato">
-                        <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
+            <h2 class="section-title">Contato</h2>
+            <p>Email: phestalise@gmail.com</p>
+            <p>Telefone: +55 (11) 99577-8390</p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="logo-footer">PE</div>
-                <p>Desenvolvido com <i class="fas fa-heart"></i> por Paulo Estalise</p>
-                <div class="social-links">
-                    <a href="https://github.com/phestalise"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/paulo-henrique-estalise-a2324a271/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <p class="copyright">&copy; 2025 Paulo Estalise. Todos os direitos reservados.</p>
+            <p>© 2025 Paulo Estalise</p>
         </div>
     </footer>
 
-    <!-- Script JS -->
-    <script src="script.js"></script>
 </body>
 </html>
